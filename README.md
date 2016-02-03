@@ -3,12 +3,12 @@
 This Job will keep (or not) partitions in HIVE 
 
 Let's say we have this a HDFS - HIVE table partitioned like this. All the data is stored like text (CSV):
-  root
+ ` root
    |--year
    |--month
    |--day
    |--hour
- 
+ `
  And we want to create:
  1. A parquet file containing all the data OR 
  2. Exactly the same partitioning but with Parquet files instead text (CSV) files.
