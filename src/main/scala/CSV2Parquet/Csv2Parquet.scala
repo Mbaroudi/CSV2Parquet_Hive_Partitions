@@ -97,20 +97,9 @@ object Csv2Parquet extends App {
         hour <- hours
       } yield rootPath + s"year=$year/month=$month/day=$day/hour=$hour/"
 
-    case class event(userid: String,
+    case class event(eventId: String,
                      timestamp: String,
-                     event_type: String,
-                     header: String,
-                     custom: String,
-                     country: String,
-                     os: String,
-                     locale: String,
-                     custom_analysis: String,
-                     programmer_dimension: String,
-                     custom_data: String,
-                     standard_data: String,
-                     header_data: String,
-                     aux_data: String)
+                     eventType: String)
 
     val event_schema =
       StructType(
