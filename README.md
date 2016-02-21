@@ -1,6 +1,6 @@
 # Spark Job to create Parquet files from text file
 
-This Job will keep (or not) partitions in HIVE 
+This Job can keep (or not) the partitions in HIVE 
 
 Let's say we have this a HDFS - HIVE table partitioned like this. All the data is stored like text (CSV):
  ```
